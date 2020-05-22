@@ -1,2 +1,2 @@
-# java_personal
-Personal projects developed in my free time.
+# BitClick
+A clicker game made in Java.
