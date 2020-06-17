@@ -1,30 +1,21 @@
-
-
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-
 import javax.swing.JPanel;
 
 public class Coin extends JPanel{
-	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private int x;
 	private int y;
 	private int speed;
-	
-	public Coin()
-	{
+
+	public Coin() {
 		x = 0;
 		y = -50;
 		speed = 1;
 	}
-	
-	public Coin(int cx, int cy, int sp)
-	{
+
+	public Coin(int cx, int cy, int sp) {
 		x = cx;
 		y = cy;
 		speed = sp;
@@ -53,9 +44,8 @@ public class Coin extends JPanel{
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-	
-	public void drawCoin(int x, Graphics g)
-	{
+
+	public void drawCoin(int x, Graphics g) {
 		int color = (int)(Math.random() * 51 + 204);
 		g.setColor(new Color(color, color, 0));
 		g.fillOval(x, y, 50, 50);
